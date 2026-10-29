@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/paper/paper"
+  ],
+  "window": {
+    "navigationBarTitleText": "题匠",
+    "navigationBarBackgroundColor": "#edf1e8",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#edf1e8",
+    "backgroundTextStyle": "light"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

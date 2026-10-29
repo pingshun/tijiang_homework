@@ -1,0 +1,22 @@
+<view class="home-page">
+  <view class="brand-row">
+    <image class="brand-icon" src="/assets/tijiang-icon.png" mode="aspectFit" />
+    <text class="brand-name">题匠</text>
+  </view>
+
+  <view class="home-content">
+    <text class="eyebrow">DAILY MATH PRACTICE</text>
+    <text class="home-title">今天的练习，
+从这里开始。</text>
+    <text class="description">每天一套小学数学练习，包含乘法与 20 以内加减法。</text>
+    <button class="primary-button" bindtap="openPaper">
+      <text>今日份试卷(三上)</text>
+      <text class="arrow">→</text>
+    </button>
+  </view>
+
+  <view class="home-footer">
+    <text>{{dateLabel}}</text>
+    <text>每日 40 题</text>
+  </view>
+</view>

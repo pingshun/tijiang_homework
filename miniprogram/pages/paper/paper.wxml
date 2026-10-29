@@ -1,0 +1,65 @@
+<view class="page">
+  <view class="topbar">
+    <view class="back-link" bindtap="goHome">
+      <text class="back-arrow">←</text>
+      <text>返回首页</text>
+    </view>
+    <text class="page-date">{{paperDate}}</text>
+  </view>
+
+  <view class="intro">
+    <text class="eyebrow">DAILY MATH PRACTICE</text>
+    <text class="page-title">今日份试卷(三上)</text>
+    <text class="subtitle">40 道题 · 每天一套</text>
+  </view>
+
+  <view class="actions">
+    <button class="action-button answer-button" bindtap="toggleAnswers">
+      {{showAnswers ? '隐藏答案' : '显示答案'}}
+    </button>
+    <button class="action-button export-button" bindtap="exportPdf" loading="{{pdfBusy}}" disabled="{{pdfBusy}}">导出 PDF</button>
+  </view>
+
+  <view class="paper-sheet">
+    <view class="student-line">
+      <text>姓名：____________</text>
+      <text>得分：________</text>
+      <text>用时：________</text>
+    </view>
+
+    <view class="question-section">
+      <view class="section-heading">
+        <text>一、个位数乘法</text>
+        <text class="section-count">10 题</text>
+      </view>
+      <view class="question-grid">
+        <view class="question" wx:for="{{multiplication}}" wx:key="number">
+          <text class="question-number">{{item.number}}.</text>
+          <text>{{item.text}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="question-section">
+      <view class="section-heading">
+        <text>二、20 以内加减法</text>
+        <text class="section-count">30 题</text>
+      </view>
+      <view class="question-grid">
+        <view class="question" wx:for="{{additionSubtraction}}" wx:key="number">
+          <text class="question-number">{{item.number}}.</text>
+          <text>{{item.text}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="answers" wx:if="{{showAnswers}}">
+      <view class="section-heading"><text>参考答案</text></view>
+      <view class="answer-grid">
+        <text wx:for="{{answers}}" wx:key="number">{{item.number}}. {{item.answer}}</text>
+      </view>
+    </view>
+
+    <view class="paper-footer">每天练一点，进步看得见</view>
+  </view>
+</view>

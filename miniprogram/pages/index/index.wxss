@@ -1,0 +1,87 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 36rpx 44rpx;
+  background: #edf1e8;
+}
+
+.brand-row {
+  display: flex;
+  align-items: center;
+  gap: 20rpx;
+}
+
+.brand-icon {
+  display: block;
+  width: 68rpx;
+  height: 68rpx;
+  border-radius: 12rpx;
+}
+
+.brand-name {
+  color: #202c24;
+  font-size: 28rpx;
+  font-weight: 700;
+}
+
+.home-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 72rpx 0 120rpx;
+}
+
+.eyebrow {
+  margin-bottom: 20rpx;
+  color: #d8774c;
+  font-size: 20rpx;
+  font-weight: 700;
+}
+
+.home-title {
+  color: #202c24;
+  font-family: serif;
+  font-size: 60rpx;
+  line-height: 1.35;
+}
+
+.description {
+  max-width: 600rpx;
+  margin: 28rpx 0 44rpx;
+  color: #707a6e;
+  font-size: 28rpx;
+  line-height: 1.8;
+}
+
+.primary-button {
+  display: flex;
+  width: 100%;
+  min-height: 96rpx;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 32rpx;
+  color: #fff;
+  background: #285a43;
+  border-radius: 8rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+  line-height: 96rpx;
+  text-align: left;
+}
+
+.arrow {
+  font-size: 38rpx;
+  font-weight: 400;
+}
+
+.home-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24rpx;
+  color: #707a6e;
+  border-top: 1rpx solid #d9dfd4;
+  font-size: 22rpx;
+}
